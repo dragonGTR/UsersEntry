@@ -248,10 +248,3 @@ def validate_all_data(birth, date_validate,
 
     return count_validate, "Success"
 
-
-def display_user(request):
-    """display data"""
-    # pylint: disable=no-member
-    data = Users.objects.all()
-    context = {"data": data}
-    return render(request, 'main/index4.html', context)
